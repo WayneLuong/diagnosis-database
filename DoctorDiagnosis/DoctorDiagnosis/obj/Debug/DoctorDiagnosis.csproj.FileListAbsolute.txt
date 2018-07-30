@@ -1,0 +1,16 @@
+c:\users\3\documents\visual studio 2012\Projects\DoctorDiagnosis\DoctorDiagnosis\bin\Debug\DoctorDiagnosis.exe.config
+c:\users\3\documents\visual studio 2012\Projects\DoctorDiagnosis\DoctorDiagnosis\bin\Debug\Diagnosis.sdf
+c:\users\3\documents\visual studio 2012\Projects\DoctorDiagnosis\DoctorDiagnosis\bin\Debug\DoctorDiagnosis.exe
+c:\users\3\documents\visual studio 2012\Projects\DoctorDiagnosis\DoctorDiagnosis\bin\Debug\DoctorDiagnosis.pdb
+c:\users\3\documents\visual studio 2012\Projects\DoctorDiagnosis\DoctorDiagnosis\obj\Debug\DoctorDiagnosis.csprojResolveAssemblyReference.cache
+c:\users\3\documents\visual studio 2012\Projects\DoctorDiagnosis\DoctorDiagnosis\obj\Debug\DoctorDiagnosis.Properties.Resources.resources
+c:\users\3\documents\visual studio 2012\Projects\DoctorDiagnosis\DoctorDiagnosis\obj\Debug\DoctorDiagnosis.csproj.GenerateResource.Cache
+c:\users\3\documents\visual studio 2012\Projects\DoctorDiagnosis\DoctorDiagnosis\obj\Debug\DoctorDiagnosis.exe
+c:\users\3\documents\visual studio 2012\Projects\DoctorDiagnosis\DoctorDiagnosis\obj\Debug\DoctorDiagnosis.pdb
+C:\Users\3\documents\visual studio 2012\Projects\DoctorDiagnosis\DoctorDiagnosis\obj\Debug\DoctorDiagnosis.Admin.resources
+C:\Users\3\documents\visual studio 2012\Projects\DoctorDiagnosis\DoctorDiagnosis\obj\Debug\DoctorDiagnosis.Main.resources
+C:\Users\3\documents\visual studio 2012\Projects\DoctorDiagnosis\DoctorDiagnosis\bin\Debug\Syn.Bot.dll
+C:\Users\3\documents\visual studio 2012\Projects\DoctorDiagnosis\DoctorDiagnosis\bin\Debug\Syn.Bot.xml
+C:\Users\3\Desktop\Work\BSc Computer Science\Year 3\Individual Project\Dissertation\DoctorDiagnosis\DoctorDiagnosis\bin\Debug\DoctorDiagnosis.exe.config
+C:\Users\3\Desktop\Work\BSc Computer Science\Year 3\Individual Project\Dissertation\DoctorDiagnosis\DoctorDiagnosis\obj\Debug\DoctorDiagnosis.exe
+C:\Users\3\Desktop\Work\BSc Computer Science\Year 3\Individual Project\Dissertation\DoctorDiagnosis\DoctorDiagnosis\obj\Debug\DoctorDiagnosis.pdb

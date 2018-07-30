@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<simlproject>
+  <name>FemaleTest</name>
+  <directory>FemaleTest</directory>
+  <botname>test</botname>
+  <personality>test</personality>
+  <author>Wayne Luong</author>
+  <description>Test</description>
+  <date>22:06:10, 11 April 2015</date>
+</simlproject>

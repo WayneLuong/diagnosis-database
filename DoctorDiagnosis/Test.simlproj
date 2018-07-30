@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<simlproject>
+  <name>Test</name>
+  <directory>Test</directory>
+  <botname>Test</botname>
+  <personality>Test</personality>
+  <author>Wayne Luong</author>
+  <description>Prototype</description>
+  <date>16:36:05, 09 April 2015</date>
+</simlproject>

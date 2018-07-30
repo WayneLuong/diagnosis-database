@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Siml>
+  <Concept Type="public" Name="Hello Bot">
+    <Model>
+      <Pattern>
+        <Item>HELLO BOT</Item>
+        <Item>HELLO THERE</Item>
+        <Item>HI</Item>
+        <Item>HELLO</Item>
+        <Item>HI DOCTOR</Item>
+        <Item>HI DR BOT</Item>
+      </Pattern>
+      <Response>Hello Patient!</Response>
+    </Model>
+
+
+
+    //DOCBOT
+    //Examples
+    <Model><Pattern>I HAVE A (HEADACHE|COUGH)</Pattern><Response>I see.. Your <Match /> might be because you have a cold.</Response></Model>
+<Model><Pattern>I FEEL (SICK|DIZZY)</Pattern><Response>I see.. Your <Match /> feeling might be because you have a flu.</Response></Model>
+<Model><Pattern>I HAVE A (ITCHY SKIN|RED RASH)</Pattern><Response>I see.. Your <Match /> might be because you have eczema.</Response></Model>
+<Model><Pattern>I HAVE (MORNING SICKNESS|LOSS OF APPETITE)</Pattern><Response>I see.. Your <Match /> might be because you are pregnant.</Response></Model>
+
+
+
+    //Random responses
+<Model><Pattern>BYE</Pattern><Response><Random><Item>See Ya</Item><Item>Adios amigo!</Item><Item>Talk to you later</Item><Item>Nice talking to you.</Item></Random></Response></Model>
+<Model><Pattern>DO YOU LIKE (LIFE|THIS)</Pattern><Response>Yes I love <Match /></Response></Model>
+<Model><Pattern>I AM FEELING [SYMPTOM]</Pattern><Response>I see.. so you are feeling <Match />. What are your symptoms?.</Response></Model>
+<Model><Pattern>I AM @NUMBER YEARS OLD</Pattern><Response><Match /> years is good enough.</Response></Model>
+
+
+
+
+//Wildcard matches one or more
+<Model><Pattern>ARE YOU *</Pattern><Response>I am not sure if I am <Match /></Response></Model>
+
+
+
+//Wildcard matches 0, so only 'how are you' is taken in
+<Model><Pattern>HOW ARE YOU $</Pattern><Response>I am fine thank you!</Response></Model>
+
+
+
+
+
+//Setting the gender
+<Model><Pattern>MY GENDER IS *</Pattern><Response>Alright I will remember your gender is <User Set="GENDER"><Match /></User></Response></Model>
+<Model><Pattern>WHAT IS MY GENDER</Pattern><Response>Your gender is <User Get="GENDER" /></Response></Model>
+
+
+
+
+
+//Testing to show Javascript inside the pattern element
+<Model><Pattern>TEST JAVASCRIPT</Pattern><Response><Js>java();</Js></Response></Model>
+
+
+
+
+
+//Setting variables
+
+<Model><Pattern>MY NAME IS *</Pattern><Response>Alright I will remember your name <User Set="NAME"><Match /></User></Response></Model>
+<Model><Pattern>WHAT IS MY NAME</Pattern><Response>Your name is <User Get="NAME" /></Response></Model>
+<Model><Pattern>WHAT IS YOUR NAME</Pattern><Response>My name is <Bot Get="NAME" /></Response></Model>
+<Model><Pattern>CHANGE YOUR NAME TO *</Pattern><Response>Alright my name is now <Bot Set="NAME"><Match /></Bot></Response></Model>
+
+
+
+
+
+//Maps are used to change specific text to different values
+<Map Name="2ndPerson"><MapItem Content="you are" Value="i am" /><MapItem Content="i am" Value="you are" /><MapItem Content="you" Value="me" /><MapItem Content="me" Value="you" /><MapItem Content="your" Value="my" /></Map><Model><Pattern>I THINK * AWESOME</Pattern><Response>Yes <Map Get="2ndPerson"><Match /></Map> awesome.</Response></Model>
+
+
+
+
+
+//Predictive responses
+<Model><Pattern><Item>DO YOU LIKE CUPCAKES</Item><Item>DO YOU LOVE CUPCAKES</Item><Item>DO YOU WANT CUPCAKES</Item></Pattern><Response><Phrase><Item>I do like cupcakes</Item><Item>Yes I love cupcakes</Item><Item>I do want cupcakes</Item></Phrase></Response></Model>
+
+
+
+
+
+//Previous utterence for confirming responses
+<Model><Pattern>CLOSE APPLICATION</Pattern><Response>Are you sure?</Response><Model><Pattern>Yes</Pattern><Response>Application closed.</Response></Model>
+<Model><Pattern>No</Pattern><Response>Application shut-down cancelled.</Response></Model>
+</Model>
+
+
+
+
+//Maths calculation
+<Model><Pattern>WHAT IS THE SINE OF *</Pattern><Response>It's <Math Get="sin"><Match /></Math></Response></Model>
+<Model><Pattern>CALCULATE *</Pattern><Response>The answer is <Math><Match /></Math></Response></Model>
+
+
+
+
+
+//Date and Time
+<Model><Pattern>WHAT DAY IS IT</Pattern><Response>It's <Date Get="weekday" /></Response></Model>
+<Model><Pattern>WHAT YEAR IS IT</Pattern><Response>It's <Date Get="year" /></Response></Model>
+<Model><Pattern>WHAT ERA IS IT</Pattern><Response>It's <Date Format="gg" /></Response></Model>
+
+
+
+
+//Normalisation to filter out junk words
+<Splitter><Text>.</Text><Text>?</Text><Text>!</Text><Text>;</Text><Regex>\b(and)\b</Regex>
+  
+  //Filter out words
+  <Filter Value="what is"><Word>whats</Word></Filter></Splitter></Concept>
+</Siml>
